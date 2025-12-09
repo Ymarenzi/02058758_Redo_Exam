@@ -11,7 +11,13 @@ public class Console {
         this.testDB = testDB;
 
         while (true){
-            System.out.println("");
+            for (int t: testDB.getDurationList()){
+                System.out.println( testDB.getTestList().get(int t) + "location" + "status");
+            }
+
+            while i<24{
+                hospitalInformation.waitAnHour();
+            }
         }
     }
 }
